@@ -1,0 +1,14 @@
+.header{
+    padding: 36px 0px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px
+}
+.hide{
+    opacity: 0;
+    visibility: hidden;
+}

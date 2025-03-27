@@ -5,7 +5,9 @@
   gap: calc(var(--base) / 4) var(--base);
   align-items: center;
   flex-wrap: wrap;
+  float: right;
   opacity: 1;
+  margin-top: 1rem;
   transition: opacity 100ms linear;
   visibility: visible;
 

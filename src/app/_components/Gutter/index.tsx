@@ -5,7 +5,7 @@ import classes from './index.module.scss'
 type Props = {
   left?: boolean
   right?: boolean
-  className?: string
+  className?: string | string[]
   children: React.ReactNode
   ref?: Ref<HTMLDivElement>
 }
