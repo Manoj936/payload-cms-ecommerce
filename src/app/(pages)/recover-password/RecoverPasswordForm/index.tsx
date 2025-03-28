@@ -9,6 +9,7 @@ import { Input } from '../../../_components/Input'
 import { Message } from '../../../_components/Message'
 
 import classes from './index.module.scss'
+import Image from 'next/image'
 
 type FormData = {
   email: string
@@ -54,10 +55,12 @@ export const RecoverPasswordForm: React.FC = () => {
           <div className={classes.formWrapper}>
             <p>
               {`Please enter your email below. You will receive an email message with instructions on
-              how to reset your password. To manage your all users, `}
-              <Link href="/admin/collections/users">login to the admin dashboard</Link>
-              {'.'}
+              how to reset your password.`}
             </p>
+            <Link href="/login" className={classes.backLink}>
+              <Image src="/assets/icons/arrow-left.svg" width={24} height={24} alt="back icon" />
+              <p>Go Back</p>
+            </Link>
             <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
               <Message error={error} className={classes.message} />
               <Input
